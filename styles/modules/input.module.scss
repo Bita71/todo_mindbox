@@ -1,0 +1,18 @@
+@import "../utils/utils.scss";
+
+.form {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+
+  &::placeholder {
+    font-family: $fontFamily;
+    font-style: italic;
+    color: $greyB3;
+  }
+}

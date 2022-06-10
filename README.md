@@ -6,5 +6,9 @@ npm i
 
 dev - npm run dev
 prod - npm run build
-prod server - npm run server (after run build)
+prod server - npm run server 
 lint - npm run lint
+test(cypress) - npm run test
+
+
+server: http://localhost:3000

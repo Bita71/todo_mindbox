@@ -1,0 +1,45 @@
+@import "../utils/utils.scss";
+
+.block {
+  position: relative;
+  box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.2);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: $white;
+}
+
+.buttonArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  &Icon {
+    @include transition(transform);
+    transform: rotate(-90deg);
+    &.open {
+      transform: rotate(0);
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+.list {
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.active {
+  border-top: 1px solid $greyB3;
+}

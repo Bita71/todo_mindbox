@@ -1,23 +1,5 @@
 @import "./utils/utils.scss";
 
-:root {
-  --greyC8: #c8c8c8;
-  --greyB3: #b3b3b3;
-  --greyE5: #e5e5e5;
-  --grey5C: #5c5c5c;
-  --grey89: #898989;
-  --green: #00cd2d;
-  --blue: #005dea;
-  --error: red;
-  --blueLight: #00c1cd;
-  --black: #000000;
-  --white: #fff;
-  --radius: 8px;
-  --fontFamily: "Roboto", serif;
-  --transition-duration: 0.2s;
-  --timing-function: ease-in-out;
-}
-
 *,
 *::before,
 *::after {
@@ -34,31 +16,21 @@
 }
 
 body {
-  padding: 0;
+  padding: 15px;
   margin: 0;
   color: $black;
-  line-height: 24px;
   font-family: $fontFamily;
   font-weight: 400;
-  font-size:15px;
-  line-height: 18px;
-  background-color: $greyE5;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: rgb(224, 222, 222);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-a {
-  display: block;
-  text-decoration: none;
 }
 
 h1,
@@ -75,40 +47,7 @@ button {
   cursor: pointer;
 }
 
-input {
-  &[type="text"]::-ms-clear,
-  &[type="text"]::-ms-reveal {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-  &[type="search"]::-webkit-search-decoration,
-  &[type="search"]::-webkit-search-cancel-button,
-  &[type="search"]::-webkit-search-results-button,
-  &[type="search"]::-webkit-search-results-decoration {
-    display: none;
-  }
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-}
-
 form {
   margin: 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  display: inline-block;
-  border: 0;
-  width: 1px;
-  height: 1px;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-}

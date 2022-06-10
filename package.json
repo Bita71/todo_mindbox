@@ -1,25 +1,30 @@
 {
-  "name": "hello-next",
+  "name": "mindbox",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "npm run build && next start",
+    "lint": "next lint",
+    "test": "npm run dev && cypress open"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
     "classnames": "^2.3.1",
     "next": "^12.1.6",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0"
   },
   "devDependencies": {
     "@types/node": "17.0.14",
     "@types/react": "17.0.38",
+    "cypress": "^10.1.0",
     "eslint": "^8.15.0",
     "eslint-config-next": "^12.1.6",
     "sass": "^1.51.0",

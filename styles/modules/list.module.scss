@@ -1,0 +1,40 @@
+@import "../utils/utils.scss";
+
+.list {
+  background-color: $white;
+}
+.item {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $greyB3;
+  padding: 10px;
+  cursor: pointer;
+  @include transition(opacity);
+  @include hover();
+
+  &:hover .text {
+    text-decoration: line-through;
+  }
+}
+
+.status {
+  border: 1px solid $greyB3;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include transition(background-image);
+  .completed & {
+    background-image: url("../../public/asset/complete.svg");
+  }
+}
+
+.text {
+  @include transition(text-decoration);
+  .completed & {
+    color: $greyB3;
+    text-decoration: line-through;
+  }
+}

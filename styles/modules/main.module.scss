@@ -1,0 +1,15 @@
+@import '../utils/utils.scss';
+
+.block {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1;
+  color: $pink;
+}

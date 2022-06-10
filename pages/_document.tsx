@@ -24,9 +24,9 @@ class MyDocument extends Document {
       <Html lang="ru">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="crossOrigin" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
             rel="stylesheet"
           />
         </Head>

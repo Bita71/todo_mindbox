@@ -1,0 +1,44 @@
+@import "../utils/utils.scss";
+
+.block {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  font-size: 12px;
+  line-height: 1;
+  color: $grey5C;
+  background-color: $white;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.activeButton {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  color: $grey5C;
+  @include transition(border-color, opacity);
+  @include hover();
+
+  &.active {
+    border-color: $pink;
+  }
+}
+
+.clearButton {
+  margin-right: 0;
+  color: $grey5C;
+
+  @include transition(opacity);
+  @include hover()
+}
