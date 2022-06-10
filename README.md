@@ -1,14 +1,39 @@
-1. Install
+# Install
 
+```
 npm i
+```
 
-2. Run
+# Run
 
-dev - npm run dev
-prod - npm run build
-prod server - npm run server 
-lint - npm run lint
-test(cypress) - npm run test
+## Dev
 
+```
+npm run dev
+```
+Local server: http://localhost:3000
 
-server: http://localhost:3000
+## Prod
+
+```
+npm run build
+```
+
+## Prod Server
+
+```
+npm run start 
+```
+Local server: http://localhost:3000
+
+## Lint
+
+```
+npm run lint 
+```
+
+## Test(cypress)
+
+```
+npm run test 
+```
