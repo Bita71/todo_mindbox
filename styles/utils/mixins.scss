@@ -1,0 +1,23 @@
+@mixin transition($properties...) {
+  transition-property: $properties;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+@mixin hover() {
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@mixin active() {
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+@mixin focus() {
+  &:focus {
+    opacity: 0.6;
+  }
+}
